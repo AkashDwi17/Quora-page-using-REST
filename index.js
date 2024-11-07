@@ -1,9 +1,11 @@
 const express = require('express');
 const app = express();
 const port = 3000;
+
+
 const path = require("path");
 const { v4: uuidv4 } = require('uuid'); // to generate unique id
-const methodOverride = require('method-override'); // to send patch request
+const methodOverride = require('method-override'); // to send patch request 
 
 
 // Middleware to parse form data 
@@ -33,6 +35,8 @@ let posts = [
         content: "I got selected for my first internship"
     },
 ];
+
+
 
 // Route to render the posts page
 app.get('/posts', (req, res) => {
